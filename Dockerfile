@@ -9,14 +9,17 @@ WORKDIR /app
 
 # install npm dependencies
 COPY ./package.json /app/package.json
-RUN npm install && npm install -g ezmaster-cli@1.2.2
+RUN npm install && \
+    npm install -g ezmaster-cli@1.2.2
 
 COPY ./crontab.js /app
 COPY ./config.json  /app
 
 # ezmasterization see https://github.com/Inist-CNRS/ezmaster
 RUN echo '{ \
+  "httpPort": 3000, \
   "configPath": "/app/config.json" \
 }' > /etc/ezmaster.json
 
+EXPOSE 3000
 ENTRYPOINT ["npm", "start"]
