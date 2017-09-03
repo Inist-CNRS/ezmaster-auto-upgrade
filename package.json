@@ -1,0 +1,22 @@
+{
+  "name": "ezmaster-auto-upgrade",
+  "version": "1.0.0",
+  "description": "[ezmaster](https://github.com/Inist-CNRS/ezmaster) app used to auto upgrade an ezmaster application/instance",
+  "scripts": {
+    "start": "node crontab.js",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inist-CNRS/ezmaster-auto-upgrade.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Inist-CNRS/ezmaster-auto-upgrade/issues"
+  },
+  "homepage": "https://github.com/Inist-CNRS/ezmaster-auto-upgrade#readme",
+  "dependencies": {
+    "node-schedule": "^1.2.4",
+    "shelljs": "^0.7.8"
+  }
+}
