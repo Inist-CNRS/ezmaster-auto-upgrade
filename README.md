@@ -9,12 +9,22 @@
 
   ```json
   {
+    "env": {
       "APPLICATION_BASENAME": "istex/istex-dl",
-  	"INSTANCE_BASENAME": "istex-dl",
-  	"CONFIG_FROM_INSTANCE": "istex-dl-2",
+      "INSTANCE_BASENAME": "istex-dl",
+      "CONFIG_FROM_INSTANCE": "istex-dl-2",
       "EZMASTER_BASEURL": "http://ezmaster:35267"
+    },
+    "crontab" : {
+      "when": "* * * * *",
+      "commands" : [
+        "test -f /tmp/ezmaster.lock || (touch /tmp/ezmaster.lock && ezmaster-auto-upgrade-application && rm -f /tmp/ezmaster.lock)"
+      ],
+      "options": {
+        "silent": false
+      }
+    }
   }
   ```
 
   ​
-
