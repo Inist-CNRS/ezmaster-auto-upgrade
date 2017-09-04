@@ -1,4 +1,7 @@
 # ezmaster-auto-upgrade
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/inistcnrs/ezmaster-auto-upgrade.svg)](https://registry.hub.docker.com/u/inistcnrs/ezmaster-auto-upgrade/)
+
 [ezmaster](https://github.com/Inist-CNRS/ezmaster) app used to auto upgrade an ezmaster application/instance just when a new version of the application is released (npm version, then git push, then dockerhub autobuild).
 
 ## Prerequisites
