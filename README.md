@@ -1,6 +1,10 @@
 # ezmaster-auto-upgrade
 [ezmaster](https://github.com/Inist-CNRS/ezmaster) app used to auto upgrade an ezmaster application/instance just when a new version of the application is released (npm version, then git push, then dockerhub autobuild).
 
+## Prerequisites
+
+- [ezmaster](https://github.com/Inist-CNRS/ezmaster) >= 3.7.3
+
 ## Usage
 
 - Add the application in your [ezmaster](https://github.com/Inist-CNRS/ezmaster) ([inistcnrs/ezmaster-auto-upgrade:1.0.0](https://hub.docker.com/r/inistcnrs/ezmaster-auto-upgrade/tags/)) then create a new instance on this application
