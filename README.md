@@ -25,7 +25,7 @@
     "crontab" : {
       "when": "* * * * *",
       "commands" : [
-        "test -f /tmp/ezmaster.lock || (touch /tmp/ezmaster.lock ; ezmaster-auto-upgrade-application ; rm -f /tmp/ezmaster.lock)"
+        "test -f /tmp/ezmaster.lock || (touch /tmp/ezmaster.lock ; ezmaster-auto-upgrade-instance ; rm -f /tmp/ezmaster.lock)"
       ],
       "options": {
         "silent": false
@@ -34,8 +34,8 @@
   }
   ```
 
-  The `"env"` parameters are explained in the [ezmaster-cli documentation](https://github.com/Inist-CNRS/ezmaster-cli#ezmaster-auto-upgrade-application), this is the most important part of the config.
+  The `"env"` parameters are explained in the [ezmaster-cli documentation](https://github.com/Inist-CNRS/ezmaster-cli#ezmaster-auto-upgrade-instance), this is the most important part of the config.
 
   To stop docker logging, you can set the ``crontab.options.silent`` to `true`. Having log is usefull at the begining to setup the stuff.
 
-  You can also change ``crontab.when`` (crontabl syntax) if you do not want the  `ezmaster-auto-upgrade-application` command to be run too often. Ex: `"5 * * * *"` will run the command each 5 minutes instead of each minutes by default. 
+  You can also change ``crontab.when`` (crontabl syntax) if you do not want the  `ezmaster-auto-upgrade-instance` command to be run too often. Ex: `"5 * * * *"` will run the command each 5 minutes instead of each minutes by default. 

@@ -8,7 +8,7 @@
   "crontab" : {
     "when": "* * * * *",
     "commands" : [
-      "test -f /tmp/ezmaster.lock || (touch /tmp/ezmaster.lock ; ezmaster-auto-upgrade-application ; rm -f /tmp/ezmaster.lock)"
+      "test -f /tmp/ezmaster.lock || (touch /tmp/ezmaster.lock ; ezmaster-auto-upgrade-instance ; rm -f /tmp/ezmaster.lock)"
     ],
     "options": {
       "silent": false
