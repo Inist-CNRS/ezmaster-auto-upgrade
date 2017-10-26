@@ -10,7 +10,7 @@ WORKDIR /app
 # install npm dependencies
 COPY ./package.json /app/package.json
 RUN npm install && \
-    npm install -g ezmaster-cli@2.0.0
+    npm install -g ezmaster-cli@2.1.0
 
 COPY ./crontab.js /app
 COPY ./config.json  /app
