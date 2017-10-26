@@ -1,5 +1,5 @@
 {
-  "name": "ezmaster-auto-upgrade",
+  "name": "ezmaster-automaton",
   "version": "1.0.6",
   "description": "[ezmaster](https://github.com/Inist-CNRS/ezmaster) app used to auto upgrade an ezmaster application/instance",
   "scripts": {
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Inist-CNRS/ezmaster-auto-upgrade.git"
+    "url": "git+https://github.com/Inist-CNRS/ezmaster-automaton.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Inist-CNRS/ezmaster-auto-upgrade/issues"
+    "url": "https://github.com/Inist-CNRS/ezmaster-automaton/issues"
   },
-  "homepage": "https://github.com/Inist-CNRS/ezmaster-auto-upgrade#readme",
+  "homepage": "https://github.com/Inist-CNRS/ezmaster-automaton#readme",
   "dependencies": {
     "http-server": "^0.10.0",
     "node-schedule": "^1.2.4",
