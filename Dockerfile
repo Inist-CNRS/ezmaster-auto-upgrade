@@ -14,6 +14,7 @@ RUN npm install && \
 
 COPY ./crontab.js /app
 COPY ./config.json  /app
+COPY ./public  /app/public
 
 # ezmasterization see https://github.com/Inist-CNRS/ezmaster
 RUN echo '{ \
