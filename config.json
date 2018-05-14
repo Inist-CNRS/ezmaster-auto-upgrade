@@ -3,7 +3,9 @@
     "APPLICATION_BASENAME": "istex/istex-dl",
     "INSTANCE_BASENAME": "istex-dl",
     "CONFIG_FROM_INSTANCE": "",
-    "EZMASTER_BASEURL": "http://ezmaster-api:35269"
+    "EZMASTER_BASEURL": "http://ezmaster-api:35269",
+    "EZMASTER_USER": "",
+    "EZMASTER_PASSWORD": ""
   },
   "crontab" : {
     "when": "* * * * *",
