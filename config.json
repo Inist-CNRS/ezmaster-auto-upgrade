@@ -3,7 +3,7 @@
     "APPLICATION_BASENAME": "istex/istex-dl",
     "INSTANCE_BASENAME": "istex-dl",
     "CONFIG_FROM_INSTANCE": "",
-    "EZMASTER_BASEURL": "http://ezmaster:35267"
+    "EZMASTER_BASEURL": "http://ezmaster-api:35269"
   },
   "crontab" : {
     "when": "* * * * *",
@@ -11,7 +11,7 @@
       "test -f /tmp/ezmaster.lock || (touch /tmp/ezmaster.lock ; ezmaster-auto-upgrade-instance ; rm -f /tmp/ezmaster.lock)"
     ],
     "options": {
-      "silent": false
+      "silent": true
     }
   }
 }

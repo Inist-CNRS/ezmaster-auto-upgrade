@@ -20,7 +20,7 @@
       "APPLICATION_BASENAME": "istex/istex-dl",
       "INSTANCE_BASENAME": "istex-dl",
       "CONFIG_FROM_INSTANCE": "",
-      "EZMASTER_BASEURL": "http://ezmaster:35267"
+      "EZMASTER_BASEURL": "http://ezmaster-api:35269"
     },
     "crontab" : {
       "when": "* * * * *",
@@ -36,6 +36,6 @@
 
   The `"env"` parameters are explained in the [ezmaster-cli documentation](https://github.com/Inist-CNRS/ezmaster-cli#ezmaster-automaton-instance), this is the most important part of the config.
 
-  To stop docker logging, you can set the ``crontab.options.silent`` to `true`. Having log is usefull at the begining to setup the stuff.
+  To enable docker logging, you can set the ``crontab.options.silent`` to `false`. Having log is usefull at the begining to setup the stuff.
 
   You can also change ``crontab.when`` (crontabl syntax) if you do not want the  `ezmaster-automaton-instance` command to be run too often. Ex: `"5 * * * *"` will run the command each 5 minutes instead of each minutes by default. 
