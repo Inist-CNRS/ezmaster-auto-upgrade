@@ -6,7 +6,7 @@
 
 ## Prerequisites
 
-- [ezmaster](https://github.com/Inist-CNRS/ezmaster) >= 3.7.3
+- [ezmaster](https://github.com/Inist-CNRS/ezmaster) >= 4.0.0
 
 ## Usage
 
