@@ -20,7 +20,7 @@ COPY ./public  /app/public
 RUN echo '{ \
   "httpPort": 3000, \
   "configPath": "/app/config.json", \
-  "technicalInstance": true \
+  "technicalApplication": true \
 }' > /etc/ezmaster.json
 
 EXPOSE 3000
