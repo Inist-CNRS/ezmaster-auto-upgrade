@@ -1,6 +1,6 @@
 {
   "name": "ezmaster-automaton",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "[ezmaster](https://github.com/Inist-CNRS/ezmaster) app used to auto upgrade an ezmaster application/instance",
   "scripts": {
     "serve": "http-server -p 3000",
