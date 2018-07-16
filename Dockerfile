@@ -19,7 +19,8 @@ COPY ./public  /app/public
 # ezmasterization see https://github.com/Inist-CNRS/ezmaster
 RUN echo '{ \
   "httpPort": 3000, \
-  "configPath": "/app/config.json" \
+  "configPath": "/app/config.json", \
+  "technicalInstance": true \
 }' > /etc/ezmaster.json
 
 EXPOSE 3000
